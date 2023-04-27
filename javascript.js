@@ -21,18 +21,19 @@ console.log(normalPrice)
 //CONDITIONS
 
 //Discount minors 20%
-if (agePassenger < 18
-)
-{
-minorsPrice = normalPrice - ((20 / 100) * normalPrice);
-console.log(minorsPrice);}
+if (agePassenger < 18) {
+    minorsPrice = normalPrice - ((20 / 100) * normalPrice);
+    console.log(minorsPrice);
+}
+
+else if (agePassenger > 65) {
+        over65Price = normalPrice - ((40 / 100) * normalPrice);
+        console.log(over65Price)
+}
 
 else {
     finalPrice = normalPrice;
 }
-
-
-//Discount Over 65 40%
 
 
 //Output
