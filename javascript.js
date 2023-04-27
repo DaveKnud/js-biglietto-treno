@@ -8,10 +8,12 @@ normalPrice = numberKm * pricePerKm;
 
 //Ask Number Km
 numberKm = prompt("How many km do you wanna do?");
+console.log(numberKm)
 
 
 // Ask Age Passenger
 agePassenger = prompt("How old are you?");
+console.log(agePassenger);
 
 
 
