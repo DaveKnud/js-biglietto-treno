@@ -1,5 +1,5 @@
 //General variables
-let numberKm,agePassenger,normalPrice,minorsPrice,over65Price,finalPrice;
+let numberKm,agePassenger,normalPrice,minorsPrice,over65Price,finalPrice,message;
 //Constant
 const pricePerKm = 0.21;
 
@@ -24,19 +24,26 @@ console.log(normalPrice)
 if (agePassenger < 18) {
     minorsPrice = normalPrice - ((20 / 100) * normalPrice);
     console.log(minorsPrice);
+    message = `Your Special price is $ ${minorsPrice}`;
+    console.log(message);
+    document.getElementById("tot-price").innerHTML = message;
 }
 
+//Over 65 Price
 else if (agePassenger > 65) {
-        over65Price = normalPrice - ((40 / 100) * normalPrice);
-        console.log(over65Price)
+    over65Price = normalPrice - ((40 / 100) * normalPrice);
+    console.log(over65Price)
+    message = `Your Super-Special price is $ ${over65Price}`;
+    console.log(message);
+    document.getElementById("tot-price").innerHTML = message;
 }
 
+//Normal Price mannaggia tutto 
 else {
     finalPrice = normalPrice;
+    message = `Your total price is $ ${finalPrice}`;
+    console.log(message);
+    document.getElementById("tot-price").innerHTML = message;
 }
-
-
-//Output
-
 
 
