@@ -24,7 +24,7 @@ console.log(normalPrice)
 if (agePassenger < 18) {
     minorsPrice = normalPrice - ((20 / 100) * normalPrice);
     console.log(minorsPrice);
-    message = `Your Special price is $ ${minorsPrice}`;
+    message = `Your Special price is $ ${minorsPrice.toFixed(2)}`;
     console.log(message);
     document.getElementById("tot-price").innerHTML = message;
 }
@@ -33,7 +33,7 @@ if (agePassenger < 18) {
 else if (agePassenger > 65) {
     over65Price = normalPrice - ((40 / 100) * normalPrice);
     console.log(over65Price)
-    message = `Your Super-Special price is $ ${over65Price}`;
+    message = `Your Super-Special price is $ ${over65Price.toFixed(2)}`;
     console.log(message);
     document.getElementById("tot-price").innerHTML = message;
 }
@@ -41,7 +41,7 @@ else if (agePassenger > 65) {
 //Normal Price mannaggia tutto 
 else {
     finalPrice = normalPrice;
-    message = `Your total price is $ ${finalPrice}`;
+    message = `Your total price is $ ${finalPrice.toFixed(2)}`;
     console.log(message);
     document.getElementById("tot-price").innerHTML = message;
 }
